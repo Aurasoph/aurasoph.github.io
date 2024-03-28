@@ -10,16 +10,35 @@
     <header>
         <h1>Math Practice Problems</h1>
     </header>
-    <nav>
+    <nav id="unitLinks">
         <ul>
-            <li><a href="unit_pages/unit1.html">Unit 1</a></li>
-            <li><a href="unit_pages/unit2.html">Unit 2</a></li>
-            <!-- Continue with other unit pages -->
+            <!-- Unit links will be inserted here by JavaScript -->
         </ul>        
     </nav>
     <footer>
         <p>© 2024 Math Practice. All rights reserved.</p>
     </footer>
     <script src="js/script.js"></script>
+    <script>
+        window.onload = function() {
+            var unitNames = [
+                "Complex numbers",    
+                "Polar and Euler form",
+                "Complex roots",
+                "Proof by induction",
+            ];
+    
+            var navList = document.querySelector('#unitLinks ul');
+            
+            unitNames.forEach(function(name, index) {
+                var listItem = document.createElement('li');
+                var link = document.createElement('a');
+                link.href = `unit_pages/unit${index+1}.html`;
+                link.textContent = name;
+                listItem.appendChild(link);
+                navList.appendChild(listItem);
+            });
+        };
+    </script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - All Problems</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Unit 1: Induction</h1>
+    </header>
+    
+<div class="container">
+    <h2>Problems</h2>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var container = document.querySelector('.container');
+        for (var i = 1; i <= 15; i++) {
+          var card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <h3>Problem ${i}</h3>
+            <iframe src="../units/unit4/question_${i}.html" width="100%" height="200"></iframe>
+            <button class="answer-toggle" onclick="toggleAnswer('answer${i}')">Show/Hide Answer</button>
+            <div id="answer${i}" style="display:none;">
+                <iframe src="../units/unit4/markscheme_${i}.html" width="100%" height="200"></iframe>
+            </div>
+          `;
+          container.appendChild(card);
+        }
+      });
+
+      // Function to toggle the answer display
+      function toggleAnswer(answerId) {
+        var answer = document.getElementById(answerId);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+    </script>
+</div>
+    
+    <footer>
+        <p>© 2024 Math Practice. All rights reserved.</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

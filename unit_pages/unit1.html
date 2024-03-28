@@ -13,12 +13,10 @@
     
 <div class="container">
     <h2>Problems</h2>
-    <!-- Problems Loop Start -->
-    <!-- This script will generate the cards for each problem from 1 to 29 -->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var container = document.querySelector('.container');
-        for (var i = 1; i <= 29; i++) {
+        for (var i = 1; i <= 15; i++) {
           var card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
@@ -43,7 +41,6 @@
         }
       }
     </script>
-    <!-- Problems Loop End -->
 </div>
     
     <footer>
