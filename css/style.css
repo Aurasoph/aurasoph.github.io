@@ -32,7 +32,8 @@ nav ul a:hover {
 }
 
 .container {
-    max-width: 900px; /* Increased from 600px to 900px */
+    max-width: 1500px;
+    width: 100%;
     margin: auto;
     background: white;
     padding: 20px;
@@ -73,5 +74,5 @@ nav ul a:hover {
 
 .nav-link {
     text-align: left;
-    margin-left: 10px; /* Adjust this value as needed */
+    margin-left: 10px;
 }
