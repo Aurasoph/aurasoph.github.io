@@ -32,7 +32,7 @@ nav ul a:hover {
 }
 
 .container {
-    max-width: 900px;/
+    max-width: 900px; /* Increased from 600px to 900px */
     margin: auto;
     background: white;
     padding: 20px;
@@ -69,4 +69,9 @@ nav ul a:hover {
 
 .answer-toggle:hover {
     background-color: #0056b3;
+}
+
+.nav-link {
+    text-align: left;
+    margin-left: 10px; /* Adjust this value as needed */
 }
