@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<script src="../../js/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML-full"></script>
+</head>
+<div class="question" style="padding-left: 20px;">
+a. <p><em><strong>METHOD 1</strong></em></p>
+<p>attempting to use the expected value formula<em><strong>      (M1)</strong></em></p>
+<p><span class="mjpage"><math alttext="{\text{E}}\left( X \right) = \left( {1 \times 0.60} \right) + \left( {2 \times 0.30} \right) + \left( {3 \times 0.03} \right) + \left( {4 \times 0.05} \right) + \left( {5 \times 0.02} \right)" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>X</mi>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>1</mn>
+<mo>×</mo>
+<mn>0.60</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mn>0.30</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>3</mn>
+<mo>×</mo>
+<mn>0.03</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>4</mn>
+<mo>×</mo>
+<mn>0.05</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>5</mn>
+<mo>×</mo>
+<mn>0.02</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+</math></span></p>
+<p><span class="mjpage"><math alttext="{\text{E}}\left( X \right) = 1.59" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>X</mi>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mn>1.59</mn>
+</math></span>($)     <em><strong>(A1)</strong></em></p>
+<p>use of <span class="mjpage"><math alttext="{\text{E}}\left( {1.20X + 2.40} \right) = 1.20{\text{E}}\left( X \right) + 2.40" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>1.20</mn>
+<mi>X</mi>
+<mo>+</mo>
+<mn>2.40</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mn>1.20</mn>
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>X</mi>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mn>2.40</mn>
+</math></span><em><strong>      (M1)</strong></em></p>
+<p><span class="mjpage"><math alttext="{\text{E}}\left( T \right) = 1.20\left( {1.59} \right) + 2.40" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>T</mi>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mn>1.20</mn>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>1.59</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mn>2.40</mn>
+</math></span></p>
+<p><span class="mjpage"><math alttext=" = 4.31" xmlns="http://www.w3.org/1998/Math/MathML">
+<mo>=</mo>
+<mn>4.31</mn>
+</math></span>($)<em><strong>      A1</strong></em></p>
+<p> </p>
+<p><em><strong>METHOD 2</strong></em></p>
+<p>attempting to find the probability distribution for <em>T</em>      <em><strong>(M1)</strong></em></p>
+<p><img src="data:image/png;base64,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"/>     <em><strong>(A1)</strong></em></p>
+<p>attempting to use the expected value formula       <em><strong>(M1)</strong></em></p>
+<p><span class="mjpage"><math alttext="{\text{E}}\left( T \right) = \left( {3.60 \times 0.60} \right) + \left( {4.80 \times 0.30} \right) + \left( {6.00 \times 0.03} \right) + \left( {7.20 \times 0.05} \right) + \left( {8.40 \times 0.02} \right)" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mtext>E</mtext>
+</mrow>
+<mrow>
+<mo>(</mo>
+<mi>T</mi>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>3.60</mn>
+<mo>×</mo>
+<mn>0.60</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>4.80</mn>
+<mo>×</mo>
+<mn>0.30</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>6.00</mn>
+<mo>×</mo>
+<mn>0.03</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>7.20</mn>
+<mo>×</mo>
+<mn>0.05</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>+</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mn>8.40</mn>
+<mo>×</mo>
+<mn>0.02</mn>
+</mrow>
+<mo>)</mo>
+</mrow>
+</math></span></p>
+<p><span class="mjpage"><math alttext=" = 4.31" xmlns="http://www.w3.org/1998/Math/MathML">
+<mo>=</mo>
+<mn>4.31</mn>
+</math></span>($)<em><strong>      A1</strong></em></p>
+<p> </p>
+<p><em><strong>[4 marks]</strong></em></p>
+
+</div>
+<div class="question" style="padding-left: 20px;">
+b. <p><em><strong>METHOD 1</strong></em></p>
+<p>using Var(1.20 <em>X</em>  + 2.40) = (1.20)<sup>2</sup> Var(<em>X</em>) with Var(<em>X</em>) = 0.8419      <em><strong>(M1)</strong></em></p>
+<p>Var(<em>T</em>) = 1.21<em><strong>      A1</strong></em></p>
+<p><em><strong>METHOD 2</strong></em></p>
+<p>finding the standard deviation for <strong>their</strong> probability distribution found in part (a)    <em><strong>(M1)</strong></em></p>
+<p>Var(<em>T</em>) = (1.101…)<sup>2</sup> </p>
+<p>= 1.21<em><strong>    A1</strong></em></p>
+<p><strong>Note:</strong> Award <em><strong>M1A1</strong> </em>for Var(<em>T</em>) = (1.093…)<sup>2</sup> = 1.20.</p>
+<p><em><strong>[2 marks]</strong></em></p>
+
+</div>
+</html>
